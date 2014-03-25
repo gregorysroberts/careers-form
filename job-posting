@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>job posting</title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+	<style type="text/css">
+
+		.main-container {
+			margin: 0 10%;
+		}
+
+		.job-posting {
+			padding-right: 20px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="main-container">
+		<h1>Product Specialist</h1>
+		<div class="pure-g">
+
+				<div class="pure-u-2-3">
+					<div class="job-posting">
+						<p>Overview: InsideSales.com is the market leader in the emerging sales acceleration market. Breakthrough innovations in cloud-based communications, gamification, predictive analytics and data visualization have helped make the company one of the hottest employers in the United States. In fact, Inc. Magazine recently recognized the company as the 5th fastest growing software company in the country.</p>
+
+						<p>The Product Specialist will become an expert in the InsideSales.com product's technical workings and practical business application. The Product Specialist position is designed to promote into the Senior Product Specialist, Customer Account Executive and Implementation Consultant positions. If you are looking for a career in technical support or business consulting, software implementation, enterprise account management, QA, or software development, this position will provide you with the necessary skills and knowledge.</p>
+
+						<p>Position Responsibilities</p>
+
+						<ul>
+							<li>Manage a portfolio of about fifty customers and assure their success with the software</li>
+							<li>Develop strong relationships with customers to protect ongoing revenue stream and identify up-sell/cross-sell opportunities</li>
+							<li>Ensure customers are taken care of by being timely and effective in responses to all client requests</li>
+						</ul>
+					</div>
+				</div>
+
+			<div class="pure-u-1-3">
+				<form class="pure-form pure-form-aligned">
+				    <fieldset>
+				        <div class="pure-control-group">
+				            <label for="first-name">First Name:</label>
+				            <input id="first-name" type="text" placeholder="First Name">
+				        </div>
+
+				        <div class="pure-control-group">
+				            <label for="last-name">Last Name:</label>
+				            <input id="last-name" type="text" placeholder="Last Name">
+				        </div>
+
+				        <div class="pure-control-group">
+				            <label for="phone-number">Phone Number:</label>
+				            <input id="phone-number" type="tel" placeholder="Phone Number">
+				        </div>
+
+				        <div class="pure-control-group">
+				            <label for="email">Email Address</label>
+				            <input id="email" type="email" placeholder="Email Address">
+				        </div>
+
+				        <div class="pure-control-group">
+				            <label for="referred-by">Referred By:</label>
+				            <input id="referred-by" type="text" placeholder="Referred By">
+				        </div>
+
+				        <div class="pure-controls">
+				            <label for="cb" class="pure-checkbox">
+				                <input id="cb" type="checkbox"> I've read the terms and conditions
+				            </label>
+
+				            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+				        </div>
+			    	</fieldset>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

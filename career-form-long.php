@@ -14,8 +14,8 @@
     <fieldset>
     <h2>Applicant Information</h2>
 
-    <div class="pure-control-group">
-        <label for="first_name"><span class="requiredFieldMarker">*</span>First Name:</label>
+    <div>
+        <label for="first_name">First Name:</label>
         <input name="first_name" type="text" id="first_name" maxlength="25"<?php echo empty($_REQUEST['first_name'])?'':' value="'.html($_REQUEST['first_name']).'"'; ?> />
         <?php if (isset($errors['first_name'])): ?><div class="error"><?php echo $errors['first_name']; ?></div><?php endif; ?>
     </div>
