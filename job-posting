@@ -6,12 +6,33 @@
 
 	<style type="text/css">
 
+		body {
+			font-family: "Open Sans", Arial, sans-serif;
+		}
+
 		.main-container {
 			margin: 0 10%;
 		}
 
 		.job-posting {
 			padding-right: 20px;
+		}
+
+		.careers-form {
+			background-color: #25AAE1;
+			padding: 25px 18px 28px 0px;
+			border-radius: 10px;
+			color: white;
+		}
+
+		.careers-form h2 {
+			margin: 0 auto 15px auto;
+			text-align: center;
+			font-weight: normal;
+		}
+
+		.pure-button-primary {
+			background-color: #F97E2B;
 		}
 
 	</style>
@@ -39,7 +60,8 @@
 				</div>
 
 			<div class="pure-u-1-3">
-				<form class="pure-form pure-form-aligned">
+				<form class="pure-form pure-form-aligned careers-form">
+					<h2>Apply For This Position</h2>
 				    <fieldset>
 				        <div class="pure-control-group">
 				            <label for="first-name">First Name:</label>
