@@ -41,5 +41,97 @@
         </div>
     </fieldset>
 </form>
+
+
+
+
+<!-- Old Careers Form -->
+
+	<div id="careersForm">
+	    <h2>Apply For This Position</h2>
+	      <form class="pure-form pure-form-aligned" method="POST" class="analyticsForm" name="applicationForm" enctype="multipart/form-data" onsubmit="return validate(fieldArray, this);" action="career-results-test" >
+	      	<fieldset>
+	          	<input name="short-form" type="hidden" value="true" />
+
+	       		<div class="pure-control-group">
+	          		<label for="first_name">First Name:</label>
+	          		<input name="first_name" type="text" id="first_name" placeholder="First Name" />
+	          	</div>
+
+	          	<div class="pure-control-group">
+	          		<label for="last_name">Last Name:</label>
+	          		<input name="last_name" type="text" id="last_name" placeholder="Last Name" />
+	          	</div>
+
+	          	<div class="pure-control-group">
+		          	<input name="position" type="hidden" id="position" />
+		          	<input name="position_title" type="hidden" id="position_title" readonly="readonly" />
+		        </div>
+
+		        <div class="pure-control-group">
+		        	<label for="phone">Phone Number:</label>
+		          	<input name="phone" type="tel" id="phone" placeholder="Phone Number" />
+		        </div>
+
+		        <div class="pure-control-group">
+		        	<label for="email">Email Address:</label>
+		          	<input name="email" type="email" id="email" placeholder="Email Address"/>
+		        </div>
+
+		        <div class="pure-control-group">
+					<label for="zip">Zip Code:</label>
+			        <input name="zip" type="text" id="zip" placeholder="Zip Code" />
+			    </div>
+
+		        <div class="pure-control-group">
+		        	<label for="referrer">Referred By:</label>
+		          	<input name="referrer" type="text" id="referrer" Placeholder="Referred By" />
+		        </div>
+	        
+	        	<div class="pure-control-group">
+	          		<label for="resume" id="resumeLabel">Resume:<br /><span class="labelSubscript">(Word or PDF Only)</span></label>
+	        	  	<input type="file" name="resume" size="15"/>
+	          	</div>
+
+	          <button type="submit" class="pure-button pure-button-primary"><div id="careersFormSubmitBG"></div><div id="careersFormSubmitText">Apply Now</div></button>
+	        </fieldset>
+	      </form>  
+	</div>
+
+	<script language="JavaScript"><!--
+
+	  // SET UP VALIDATION ARRAY
+	  var fieldArray = new Array();
+	  // field|field name|blank,DDSEelected,phone,email
+	  fieldArray[0] = "first_name|First Name|blank";
+	  fieldArray[1] = "last_name|Last Name|blank";
+	  fieldArray[2] = "phone|Phone|phone,blank";
+	  fieldArray[3] = "position|Position|blank";
+	  fieldArray[4] = "email|Email|email,blank";
+	  fieldArray[5] = "zip|Zip Code|blank";
+	  fieldArray[6] = "resume|Your resume|blank,resume";
+
+	  document.getElementById('position_title').value = default_position_name.substr(default_position_name.indexOf(' - ')+3);
+	  document.getElementById('position').value = default_position_name;
+
+	  $('#careersForm > h2').after('<canvas class="triangle" height="24" width="48"></canvas>');
+	  $(".triangle").each(function() {
+	    var c = $(this)[0];
+	    var ctx = c.getContext("2d");
+	    ctx.moveTo(0, 0);
+	    ctx.lineTo(48, 0);
+	    ctx.lineTo(24, 24);
+	    ctx.fillStyle = "rgb(0,81,153)";
+	    ctx.globalCompositeOperation = "destination-over";
+	    ctx.shadowColor = "rgb(0,121,193)";
+	    ctx.shadowBlur = 4;
+	    ctx.shadowOffsetX = 0;
+	    ctx.shadowOffsetY = -3;
+	    ctx.fill();
+	  });
+	// --></script>
+
+
+
 </body>
 </html>
